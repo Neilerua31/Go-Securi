@@ -1,4 +1,4 @@
-mousqueton	Mousqueton 
+mousqueton	Mousqueton
 gants	Gants d’intervention
 brassard	Brassard de sécurité
 menottes	Porte menottes
