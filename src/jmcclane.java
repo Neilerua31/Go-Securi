@@ -10,7 +10,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class cberthier {
+public class jmcclane {
     public static void main(String[] args) throws IOException {
         
         String line;
@@ -21,7 +21,7 @@ public class cberthier {
             
             // Lecture fichier liste.txt
             
-            FileReader liste = new FileReader("https://github.com/Neilerua31/Go-Securi/blob/main/liste.txt");
+            FileReader liste = new FileReader("C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\liste.txt");
             BufferedReader br = new BufferedReader(liste);
               while ((line=br.readLine())!=null){
                  
@@ -39,8 +39,8 @@ public class cberthier {
         
         // Lecture fichier cberthier.txt ADAPTER 
         
-            FileReader cberthier = new FileReader("C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\cberthier.txt");
-            BufferedReader br2 = new BufferedReader(cberthier);
+            FileReader jmcclane = new FileReader("C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\jmcclane.txt");
+            BufferedReader br2 = new BufferedReader(jmcclane);
                 for (int line2 = 0; line2<3; line2++); {
             
         perso.put("Nom", br2.readLine());
@@ -76,14 +76,14 @@ public class cberthier {
              persoHtml = persoHtml.replace("var_prenom", perso.get("Prenom"));
              persoHtml = persoHtml.replace("var_mission", perso.get("Mission"));
              persoHtml = persoHtml.replace("var_materiel", materielstr);
-             persoHtml = persoHtml.replace("var_carte", "C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\Export\\cberthier.jpg");
+             persoHtml = persoHtml.replace("var_carte", "C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\jmcclane.jpg");
              
              System.out.println(persoHtml);
              
              //Creation HTML CHANGER NOM
              
-             Path pathberthierHtml = Paths.get("C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\Export\\cberthier.html");
-             BufferedWriter br4 = Files.newBufferedWriter(pathberthierHtml);
+             Path pathjmcclaneHtml = Paths.get("C:\\Users\\Aurélien\\eclipse-workspace\\Go-Securi\\jmcclane.html");
+             BufferedWriter br4 = Files.newBufferedWriter(pathjmcclaneHtml);
              br4.write(persoHtml);
              br4.close();
              
